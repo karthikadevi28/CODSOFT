@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Online Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            color: #333;
+        }
+
+        header {
+            background: #2f2f2f;
+            padding: 15px 0;
+        }
+
+        .navbar {
+            width: 90%;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #fff;
+        }
+
+        .logo h2 {
+            font-size: 22px;
+        }
+
+        .logo p {
+            font-size: 12px;
+            color: #ccc;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 14px;
+        }
+
+        nav ul li a:hover {
+            color: #4da3ff;
+        }
+
+        .hero {
+            background: #555;
+            color: #fff;
+            padding: 60px 0;
+        }
+
+        .hero-container {
+            width: 90%;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            gap: 40px;
+        }
+
+        .hero-text {
+            flex: 1;
+        }
+
+        .hero-text h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        .hero-text p {
+            font-size: 16px;
+            margin-bottom: 25px;
+            color: #e0e0e0;
+        }
+
+        .hero-text button {
+            padding: 12px 25px;
+            background: #4da3ff;
+            border: none;
+            color: #fff;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .hero-text button:hover {
+            background: #2f80ed;
+        }
+
+        .hero-image {
+            flex: 1;
+            text-align: right;
+        }
+
+        .hero-image img {
+            width: 80%;
+            max-width: 350px;
+            border-radius: 10px;
+        }
+
+        .about {
+            padding: 60px 0;
+            background: #f9f9f9;
+        }
+
+        .about-container {
+            width: 90%;
+            margin: auto;
+            display: flex;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .about-image img {
+            width: 300px;
+            border-radius: 10px;
+        }
+
+        .about-text h2 {
+            font-size: 28px;
+            margin-bottom: 15px;
+        }
+
+        .about-text p {
+            font-size: 15px;
+            line-height: 1.7;
+            margin-bottom: 20px;
+        }
+
+        .about-text button {
+            padding: 10px 20px;
+            background: #4da3ff;
+            border: none;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .about-text button:hover {
+            background: #2f80ed;
+        }
+
+        footer {
+            background: #2f2f2f;
+            color: #ccc;
+            text-align: center;
+            padding: 15px;
+        }
+
+        @media (max-width: 768px) {
+            .hero-container,
+            .about-container {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero-image {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="navbar">
+        <div class="logo">
+            <h2>Online Portfolio</h2>
+            <p>Just another My Blog site</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#home">HOME</a></li>
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#services">SERVICES</a></li>
+                <li><a href="#skills">SKILLS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="hero" id="home">
+
+    <div class="hero-container">
+        <div class="hero-text">
+            <h1>ALEXANDER SCOTTISH</h1>
+            <p>
+                Hi, I am a Professional Developer and ICT Degree holder.
+                I have five years experience in IT sector as an ICT Lecturer.
+            </p>
+            <button>Hire Me</button>
+        </div>
+
+        <div class="hero-image">
+            <img src="OIP.jpeg" alt="Profile Image">
+        </div>
+    </div>
+</section>
+<section class="about" id="about">
+
+    <div class="about-container">
+        <div class="about-image">
+            <img src="OIP.jpeg" alt="About Image">
+        </div>
+
+        <div class="about-text">
+            <h2>ABOUT ME</h2>
+            <p>
+                I am a developer who blends expertise with industry knowledge
+                to guide your next project. I specialize in software development,
+                testing, and deployment using modern tools and technologies.
+            </p>
+            <button>Download Resume</button>
+        </div>
+    </div>
+</section>
+<section id="services" class="about">
+    <div class="about-container">
+        <div class="about-text">
+            <h2>SERVICES</h2>
+            <p>
+                Web Development, Frontend Design, Responsive Layouts,
+                and Beginner-friendly projects using HTML and CSS.
+            </p>
+        </div>
+    </div>
+</section>
+<section id="skills" class="about">
+    <div class="about-container">
+        <div class="about-text">
+            <h2>SKILLS</h2>
+            <p>
+                HTML, CSS, Basic JavaScript, Responsive Design,
+                GitHub, and Web Fundamentals.
+            </p>
+        </div>
+    </div>
+</section>
+<section id="contact" class="about">
+    <div class="about-container">
+        <div class="about-text">
+            <h2>CONTACT</h2>
+            <p>
+                Email: example@gmail.com <br>
+                Phone: +91 1234567890
+            </p>
+        </div>
+    </div>
+</section>
+
+
+<footer>
+    © 2026 Online Portfolio | All Rights Reserved
+</footer>
+
+</body>
+</html>
